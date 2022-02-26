@@ -4,8 +4,8 @@ from webdriver_manager.chrome import ChromeDriverManager
 from time import sleep
 from bs4 import BeautifulSoup
 
-username = "na20b053"
-password = "Fa8A+ZBL%M5"
+username = "***"
+password = "***"
 
 url = "https://www.iitm.ac.in/viewgrades/"
 
