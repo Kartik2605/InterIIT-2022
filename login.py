@@ -4,8 +4,8 @@ from webdriver_manager.chrome import ChromeDriverManager
 from time import sleep
 from bs4 import BeautifulSoup
 
-username = "***"
-password = "***"
+username = input("Enter the username: ")
+password = input("Enter the password: ")
 
 url = "https://www.iitm.ac.in/viewgrades/"
 
@@ -29,7 +29,7 @@ html = driver.page_source
 soup = BeautifulSoup(html, 'html.parser')
 
 tags = soup('FRAME')
-for tag in tags:
-    print(tag.get('SRC', None))
+#for tag in tags:
+#    print(tag.get('SRC', None))
 
 input("Press enter to end the program and close the site....")
